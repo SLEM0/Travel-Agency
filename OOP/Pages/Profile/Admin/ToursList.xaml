@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOP.ToursList"
+             Title="Список туров">
+    <VerticalStackLayout>
+        <ListView x:Name="listview" ItemsSource="{Binding Tours}" ItemTapped="ListView_ItemTapped" RowHeight="120">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label Text="{Binding Hotel.Name}" FontSize="18" />
+                                <Label Text="{Binding Eat}" FontSize="16" />
+                                <Label Text="{Binding Room.Name}" FontSize="16" />
+                                <Label Text="{Binding AvailablePlaces}" FontSize="14" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Добавить тур" Clicked="Add_Tour_Button_Clicked" BackgroundColor="#E85021" TextColor="White"/>
+    </VerticalStackLayout>
+</ContentPage>

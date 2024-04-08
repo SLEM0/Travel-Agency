@@ -1,0 +1,211 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = OOP
+build_property.ProjectDir = C:\Users\User\source\repos\OOP\OOP\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.App.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\App.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\App.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AppShell.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Contacts.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Contacts.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Contacts.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Contacts.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/FaforitesTours.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.FaforitesTours.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\FaforitesTours.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\FaforitesTours.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Favorites.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Favorites.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Favorites.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Favorites.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Filter/FilterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Filter.FilterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Filter\FilterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Filter\FilterPage.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Filter/HotelInfo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Filter.HotelInfo.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Filter\HotelInfo.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Filter\HotelInfo.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Filter/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Filter.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Filter\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Filter\MainPage.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Filter/TourInfo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Filter.TourInfo.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Filter\TourInfo.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Filter\TourInfo.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/AddHotel.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.AddHotel.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\AddHotel.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\AddHotel.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/AddReply.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.AddReply.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\AddReply.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\AddReply.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/AddRoom.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.AddRoom.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\AddRoom.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\AddRoom.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/AddTour.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.AddTour.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\AddTour.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\AddTour.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/AdminProfile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.AdminProfile.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\AdminProfile.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\AdminProfile.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/AdminReply.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.AdminReply.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\AdminReply.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\AdminReply.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/ClientsList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.ClientsList.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\ClientsList.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\ClientsList.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/EditHotel.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.EditHotel.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\EditHotel.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\EditHotel.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/EditRoom.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.EditRoom.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\EditRoom.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\EditRoom.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/EditTour.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.EditTour.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\EditTour.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\EditTour.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/HotelList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.HotelList.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\HotelList.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\HotelList.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/ToursList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.ToursList.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\ToursList.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\ToursList.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Client/AddReview.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Client.AddReview.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Client\AddReview.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Client\AddReview.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Client/ClientBookings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Client.ClientBookings.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Client\ClientBookings.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Client\ClientBookings.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Client/ClientChangeName.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Client.ClientChangeName.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Client\ClientChangeName.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Client\ClientChangeName.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Client/ClientChangePassword.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Client.ClientChangePassword.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Client\ClientChangePassword.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Client\ClientChangePassword.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Client/ClientProfile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Client.ClientProfile.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Client\ClientProfile.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Client\ClientProfile.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Client/ClientReply.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Client.ClientReply.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Client\ClientReply.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Client\ClientReply.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Client/Settings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Client.Settings.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Client\Settings.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Client\Settings.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/EntryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.EntryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\EntryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\EntryPage.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Profile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Profile.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Profile.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Profile.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Registration.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Registration.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Registration.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Registration.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

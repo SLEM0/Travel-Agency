@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOP.Contacts"
+             BackgroundColor="Black">
+    <VerticalStackLayout>
+        <Label Text="Офис онлайн продаж"
+               Background="#1c1c1c"
+               FontAttributes="Bold"
+               FontSize="30"
+               Padding="10"/>
+        <Label Text="Минск" FontSize="25"/>
+        <Label Text="Ежедневно с 10:00 до 22:00"
+               FontSize="20"
+               TextColor="LightGray"
+               Margin="4"/>
+        <HorizontalStackLayout>
+            <ImageButton Source="phone.png"
+                    HorizontalOptions="FillAndExpand"
+                    Padding="10"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    BackgroundColor ="#3CFF25"
+                    CornerRadius="10"/>
+            <ImageButton Source="viber.png"
+                    HorizontalOptions="FillAndExpand"
+                    Padding="10"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    BackgroundColor ="#8E24AA"
+                    Margin="5"
+                    CornerRadius="10"/>
+            <ImageButton Source="telegram.png"
+                    HorizontalOptions="FillAndExpand"
+                    Padding="10"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    BackgroundColor = "#1B92D1"
+                    CornerRadius="10"/>
+        </HorizontalStackLayout>
+        <Label Text="Офисы в Минске"
+               Background="#1c1c1c"
+               FontAttributes="Bold"
+               FontSize="30"
+               Padding="10"/>
+        <HorizontalStackLayout Margin="7">
+            <Image Source="merto.png"
+                   WidthRequest="40"
+                   HeightRequest="40"
+                   BackgroundColor ="White"
+                   HorizontalOptions="FillAndExpand"/>
+            <Label Text=" Автозаводская"
+                   TextColor="LightGray"
+                   FontSize="25"/>
+        </HorizontalStackLayout>
+        <Label Text="пр. Партизанский, д. 111, кв. 7" FontSize="25"/>
+        <Label Text="Ежедневно с 10:00 до 22:00"
+               TextColor="LightGray"
+               FontSize="20"
+               Margin="4"/>
+        <HorizontalStackLayout>
+            <ImageButton Source="phone.png"
+                    HorizontalOptions="FillAndExpand"
+                    Padding="10"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    BackgroundColor ="#3CFF25"
+                    CornerRadius="10"/>
+            <ImageButton Source="viber.png"
+                    HorizontalOptions="FillAndExpand"
+                    Padding="10"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    BackgroundColor ="#8E24AA"
+                    Margin="5"
+                    CornerRadius="10"/>
+            <ImageButton Source="telegram.png"
+                    HorizontalOptions="FillAndExpand"
+                    Padding="10"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    BackgroundColor = "#1B92D1"
+                    CornerRadius="10"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

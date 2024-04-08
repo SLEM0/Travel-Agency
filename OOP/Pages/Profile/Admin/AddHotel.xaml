@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOP.AddHotel"
+             Title="Добавить отель">
+    <VerticalStackLayout>
+        <Label Text="Страна" />
+        <Entry x:Name="Country"/>
+        <Label Text="Курорт" />
+        <Entry x:Name="Curort"/>
+        <Picker x:Name="categoryPicker" Title="Категория" ItemsSource="{Binding Lst5}"/>
+        <Label Text="Название" />
+        <Entry x:Name="Name"/>
+        <Label Text="Описание" />
+        <Entry x:Name="Description" />
+        <Label Text="Питание" />
+        <StackLayout Orientation="Horizontal">
+            <CheckBox x:Name="UAI"/>
+            <Label Text="UAI" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <CheckBox x:Name="AI"/>
+            <Label Text="AI" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <CheckBox x:Name="FB"/>
+            <Label Text="FB" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <CheckBox x:Name="HB"/>
+            <Label Text="HB" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <CheckBox x:Name="BB"/>
+            <Label Text="BB" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <CheckBox x:Name="RO"/>
+            <Label Text="RO" />
+        </StackLayout>
+        <Label Text="Комнаты" />
+        <ListView x:Name="listview" ItemsSource="{Binding Rooms}" ItemTapped="ListView_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label Text="{Binding Name}" FontSize="16" />
+                                <Label Text="{Binding CountPeaple}" FontSize="14" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Добавить комнату" Clicked="Room_Button_Clicked" BackgroundColor="#E85021" TextColor="White"/>
+        <Button Text="Ок" Clicked="Ok_Button_Clicked" BackgroundColor="#E85021" TextColor="White"/>
+    </VerticalStackLayout>
+</ContentPage>

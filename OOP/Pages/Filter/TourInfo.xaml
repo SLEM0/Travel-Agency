@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOP.TourInfo"
+             Title="О туре">
+    <VerticalStackLayout>
+        <Label Text="Отель" />
+        <Label Text="{Binding Tour.Hotel.Name}"/>
+        <Label Text="Питание" />
+        <Label Text="{Binding Tour.Eat}"/>
+        <Label Text="Комната" />
+        <Label Text="{Binding Tour.Room.Name}"/>
+        <Label Text="Место вылета" />
+        <Label Text="{Binding Tour.Departure}"/>
+        <Label Text="Дата вылета" />
+        <Label Text="{Binding Tour.BeginDate}"/>
+        <Label Text="Дата прилета" />
+        <Label Text="{Binding Tour.EndDate}"/>
+        <Label Text="Отзывы" />
+        <ListView x:Name="listview" ItemsSource="{Binding Tour.Reviews}" RowHeight="120">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label Text="{Binding Rating}" FontSize="14" />
+                                <Label Text="{Binding Text}" FontSize="16" />
+                                <Label Text="{Binding Client.FirstName}" FontSize="14" />
+                                <Label Text="{Binding Client.LastName}" FontSize="14" />
+                                <Label Text="{Binding Date}" FontSize="12" />
+                                <Label Text="Ответы" />
+                                <ListView x:Name="listview" ItemsSource="{Binding Reply}">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <ViewCell.View>
+                                                    <StackLayout>
+                                                        <Label Text="{Binding Text}" FontSize="10" />
+                                                        <Label Text="{Binding Date}" FontSize="8" />
+                                                    </StackLayout>
+                                                </ViewCell.View>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Заказать" BackgroundColor="#E85021" TextColor="White" Clicked="Add_Booking_Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

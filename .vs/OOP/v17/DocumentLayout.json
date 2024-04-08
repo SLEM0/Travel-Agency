@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\OOP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\entities\\filter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\entities\\filter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\entities\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\entities\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\entities\\reply.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\entities\\reply.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\entities\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\entities\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\entities\\agencyentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\entities\\agencyentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\entities\\agency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\entities\\agency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\pages\\profile\\admin\\adminreply.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\pages\\profile\\admin\\adminreply.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\pages\\profile\\admin\\adminreply.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\pages\\profile\\admin\\adminreply.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\pages\\profile\\client\\clientprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\pages\\profile\\client\\clientprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\pages\\profile\\client\\clientprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\pages\\profile\\client\\clientprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\pages\\profile\\client\\clientreply.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\pages\\profile\\client\\clientreply.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|c:\\users\\user\\source\\repos\\oop\\oop\\pages\\profile\\client\\clientreply.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9F485FEC-4F79-4B73-8E7C-7AE489A100D4}|OOP\\OOP.csproj|solutionrelative:oop\\pages\\profile\\client\\clientreply.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Filter.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Filter.cs",
+              "RelativeDocumentMoniker": "OOP\\Entities\\Filter.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Filter.cs",
+              "RelativeToolTip": "OOP\\Entities\\Filter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:39:20.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tour.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Tour.cs",
+              "RelativeDocumentMoniker": "OOP\\Entities\\Tour.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Tour.cs",
+              "RelativeToolTip": "OOP\\Entities\\Tour.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA5wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:37:27.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Room.cs",
+              "RelativeDocumentMoniker": "OOP\\Entities\\Room.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Room.cs",
+              "RelativeToolTip": "OOP\\Entities\\Room.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:36:27.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Review.cs",
+              "RelativeDocumentMoniker": "OOP\\Entities\\Review.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Review.cs",
+              "RelativeToolTip": "OOP\\Entities\\Review.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:35:40.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Reply.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Reply.cs",
+              "RelativeDocumentMoniker": "OOP\\Entities\\Reply.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Reply.cs",
+              "RelativeToolTip": "OOP\\Entities\\Reply.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:35:22.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Hotel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Hotel.cs",
+              "RelativeDocumentMoniker": "OOP\\Entities\\Hotel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Hotel.cs",
+              "RelativeToolTip": "OOP\\Entities\\Hotel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAowAAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:34:29.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Client.cs",
+              "RelativeDocumentMoniker": "OOP\\Entities\\Client.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Client.cs",
+              "RelativeToolTip": "OOP\\Entities\\Client.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAUwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:33:14.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Booking.cs",
+              "RelativeDocumentMoniker": "OOP\\Entities\\Booking.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Booking.cs",
+              "RelativeToolTip": "OOP\\Entities\\Booking.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:32:39.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AgencyEntry.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\AgencyEntry.cs",
+              "RelativeDocumentMoniker": "OOP\\Entities\\AgencyEntry.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\AgencyEntry.cs",
+              "RelativeToolTip": "OOP\\Entities\\AgencyEntry.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:32:20.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Agency.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Agency.cs",
+              "RelativeDocumentMoniker": "OOP\\Entities\\Agency.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Entities\\Agency.cs",
+              "RelativeToolTip": "OOP\\Entities\\Agency.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAiwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:26:58.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClientProfile.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Pages\\Profile\\Client\\ClientProfile.xaml.cs",
+              "RelativeDocumentMoniker": "OOP\\Pages\\Profile\\Client\\ClientProfile.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Pages\\Profile\\Client\\ClientProfile.xaml.cs",
+              "RelativeToolTip": "OOP\\Pages\\Profile\\Client\\ClientProfile.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T19:44:38.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClientProfile.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Pages\\Profile\\Client\\ClientProfile.xaml",
+              "RelativeDocumentMoniker": "OOP\\Pages\\Profile\\Client\\ClientProfile.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Pages\\Profile\\Client\\ClientProfile.xaml",
+              "RelativeToolTip": "OOP\\Pages\\Profile\\Client\\ClientProfile.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-07T19:44:33.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminReply.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Pages\\Profile\\Admin\\AdminReply.xaml.cs",
+              "RelativeDocumentMoniker": "OOP\\Pages\\Profile\\Admin\\AdminReply.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Pages\\Profile\\Admin\\AdminReply.xaml.cs",
+              "RelativeToolTip": "OOP\\Pages\\Profile\\Admin\\AdminReply.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T19:43:41.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminReply.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Pages\\Profile\\Admin\\AdminReply.xaml",
+              "RelativeDocumentMoniker": "OOP\\Pages\\Profile\\Admin\\AdminReply.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Pages\\Profile\\Admin\\AdminReply.xaml",
+              "RelativeToolTip": "OOP\\Pages\\Profile\\Admin\\AdminReply.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-07T19:43:40.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ClientReply.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Pages\\Profile\\Client\\ClientReply.xaml.cs",
+              "RelativeDocumentMoniker": "OOP\\Pages\\Profile\\Client\\ClientReply.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Pages\\Profile\\Client\\ClientReply.xaml.cs",
+              "RelativeToolTip": "OOP\\Pages\\Profile\\Client\\ClientReply.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T19:43:36.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ClientReply.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Pages\\Profile\\Client\\ClientReply.xaml",
+              "RelativeDocumentMoniker": "OOP\\Pages\\Profile\\Client\\ClientReply.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\OOP\\OOP\\Pages\\Profile\\Client\\ClientReply.xaml",
+              "RelativeToolTip": "OOP\\Pages\\Profile\\Client\\ClientReply.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-07T19:43:35.686Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

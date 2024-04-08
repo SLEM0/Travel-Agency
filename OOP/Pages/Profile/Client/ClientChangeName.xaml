@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOP.Pages.Profile.Client.ClientChangeName"
+             Title="Изменить мои данные">
+    <VerticalStackLayout>
+        <Label Text="Фамилия" />
+        <Entry x:Name="LastName"/>
+        <Label Text="Имя" />
+        <Entry x:Name="FirstName"/>
+        <Label Text="Подтердите пароль" />
+        <Entry x:Name="Password"/>
+        <Button Text="Ок" Clicked="Ok_Button_Clicked" BackgroundColor="#E85021" TextColor="White"/>
+    </VerticalStackLayout>
+</ContentPage>

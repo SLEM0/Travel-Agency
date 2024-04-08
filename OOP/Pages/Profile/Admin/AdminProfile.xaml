@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOP.AdminProfile">
+    <VerticalStackLayout>
+        <Button Text="Клиенты"
+                Clicked="Clients_Button_Clicked"
+                BorderColor ="White"
+                BackgroundColor="#1c1c1c"
+                TextColor="White"/>
+        <Button Text="Туры"
+                Clicked="Tours_Button_Clicked"
+                BorderColor ="White"
+                BackgroundColor="#1c1c1c"
+                TextColor="White"/>
+        <Button Text="Отели" Clicked="Hotel_Button_Clicked"
+                BorderColor ="White"
+                BackgroundColor="#1c1c1c"
+                TextColor="White"/>
+        <Button Text="Отзывы" Clicked="Review_Button_Clicked"
+                BorderColor ="White"
+                BackgroundColor="#1c1c1c"
+                TextColor="White"/>
+    </VerticalStackLayout>
+</ContentPage>

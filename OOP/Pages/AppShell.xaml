@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="OOP.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:OOP"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <!--<Shell.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#E85021"/>
+    </Shell.Behaviors>-->
+
+    <Shell.TabBarForegroundColor>
+        <Color>#E85021</Color>
+    </Shell.TabBarForegroundColor>
+    <Shell.TabBarBackgroundColor>
+        <Color>Black</Color>
+    </Shell.TabBarBackgroundColor>
+    <Shell.TabBarUnselectedColor>
+        <Color>White</Color>
+    </Shell.TabBarUnselectedColor>
+    <TabBar>
+        <Tab
+            Title="Главная"
+            Icon="zalupa.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+        <Tab
+            Title="Избранное"
+            Icon="like.png">
+            <ShellContent x:Name="Fav" ContentTemplate="{DataTemplate local:Favorites}" />
+        </Tab>
+        <Tab
+            Title="Контакты"
+            Icon="map.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Contacts}" />
+        </Tab>
+        <Tab
+            Title="Профиль"
+            Icon="profile.png">
+            <ShellContent x:Name="Prof" ContentTemplate="{DataTemplate local:Profile}" />
+        </Tab>
+    </TabBar>
+</Shell>
+

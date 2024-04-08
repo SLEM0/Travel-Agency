@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOP.Profile"
+             BackgroundColor="Black">
+    <NavigationPage.TitleView>
+        <StackLayout BackgroundColor="#E85021" />
+    </NavigationPage.TitleView>
+    <Border VerticalOptions="End" WidthRequest="400" Stroke="Gray">
+        <Border.StrokeShape>
+            <RoundRectangle CornerRadius="15, 15, 0, 0" />
+        </Border.StrokeShape>
+        <VerticalStackLayout BackgroundColor ="#1c1c1c">
+            <Button Text="Войти" BackgroundColor="#E85021"
+                Margin="30"
+                TextColor="White"
+                WidthRequest="350"
+                FontSize="20"
+                Clicked="OpenEntry_Clicked"/>
+            <Button Text="Зарегестрироваться"
+                BorderColor ="White"
+                BorderWidth="2"
+                Margin="20"
+                BackgroundColor="#1c1c1c"
+                WidthRequest="350"
+                TextColor="White"
+                FontSize="20"
+                Clicked="OpenRegistration_Clicked"/>
+        </VerticalStackLayout>
+    </Border>
+</ContentPage>

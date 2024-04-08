@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOP.HotelInfo"
+             Title="Об отеле">
+    <VerticalStackLayout>
+        <Label Text="Страна" />
+        <Label Text="{Binding Hotel.Country}"/>
+        <Label Text="Курорт" />
+        <Label Text="{Binding Hotel.Curort}"/>
+        <Label Text="Категория" />
+        <Label Text="{Binding Hotel.Category}"/>
+        <Label Text="Название" />
+        <Label Text="{Binding Hotel.Name}"/>
+        <Label Text="Описание" />
+        <Label Text="{Binding Hotel.Description}"/>
+        <Label Text="Туры" />
+        <ListView x:Name="listview" ItemsSource="{Binding Tours}" ItemTapped="ListView_ItemTapped" RowHeight="120">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label Text="{Binding Hotel.Name}" FontSize="18" />
+                                <Label Text="{Binding Eat}" FontSize="16" />
+                                <Label Text="{Binding Room.Name}" FontSize="16" />
+                                <Label Text="{Binding AvailablePlaces}" FontSize="14" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>
