@@ -4,16 +4,26 @@
              x:Class="OOP.FilterPage"
              Title="Подобранные отели">
     <VerticalStackLayout>
-        <ListView x:Name="listview" ItemsSource="{Binding Hotels}" ItemTapped="ListView_ItemTapped" RowHeight="120">
+        <ListView x:Name="listview" ItemsSource="{Binding Hotels}" ItemTapped="ListView_ItemTapped" RowHeight="80">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.View>
                             <StackLayout>
-                                <Label Text="{Binding Name}" FontSize="18" />
-                                <Label Text="{Binding Category}" FontSize="14" />
-                                <Label Text="{Binding Country}" FontSize="14" />
-                                <Label Text="{Binding Curort}" FontSize="14" />
+                                <Border Stroke="Gray" Margin="5" HeightRequest="70">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="20" />
+                                    </Border.StrokeShape>
+                                    <VerticalStackLayout Margin="5">
+                                        <Label Text="{Binding Name}" FontSize="Large" />
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding Country}" FontSize="Body" />
+                                            <Label Text=", " FontSize="Body" />
+                                            <Label Text="{Binding Curort}" FontSize="Body" />
+                                            <Label Text="{Binding MinPrice}" />
+                                        </HorizontalStackLayout>
+                                    </VerticalStackLayout>
+                                </Border>
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>

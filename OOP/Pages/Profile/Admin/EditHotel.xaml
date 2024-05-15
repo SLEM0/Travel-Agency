@@ -3,62 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OOP.EditHotel"
              Title="Изменить информацию об отеле">
-    <VerticalStackLayout>
-        <Label Text="Страна" />
-        <Entry Text="{Binding MCountry}" x:Name="Country"/>
-        <Label Text="Курорт" />
-        <Entry Text="{Binding MCurort}" x:Name="Curort"/>
-        <Picker x:Name="categoryPicker" Title="Категория" ItemsSource="{Binding Lst5}"/>
-        <Label Text="Название" />
-        <Entry Text="{Binding MName}" x:Name="Name"/>
-        <Label Text="Описание" />
-        <Entry Text="{Binding MDescription}" x:Name="Description" />
-        <Label Text="Питание" />
-        <StackLayout Orientation="Horizontal">
-            <CheckBox x:Name="UAI"/>
-            <Label Text="UAI" />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <CheckBox x:Name="AI"/>
-            <Label Text="AI" />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <CheckBox x:Name="FB"/>
-            <Label Text="FB" />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <CheckBox x:Name="HB"/>
-            <Label Text="HB" />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <CheckBox x:Name="BB"/>
-            <Label Text="BB" />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <CheckBox x:Name="RO"/>
-            <Label Text="RO" />
-        </StackLayout>
-        <Label Text="Комнаты" />
-        <ListView x:Name="listview" ItemsSource="{Binding Rooms}" ItemTapped="ListView_ItemTapped">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <ViewCell.View>
-                            <StackLayout>
-                                <Label Text="{Binding Name}" FontSize="16" />
-                                <Label Text="{Binding CountPeaple}" FontSize="14" />
-                            </StackLayout>
-                        </ViewCell.View>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <Button Text="Добавить комнату" Clicked="Room_Button_Clicked" BackgroundColor="#E85021" TextColor="White"/>
-        <Button Text="Ок" Clicked="Ok_Button_Clicked" BackgroundColor="#E85021" TextColor="White"/>
-        <Button Text="Удалить"
+    <Grid>
+        <VerticalStackLayout>
+            <Entry Text="{Binding MCountry}" x:Name="Country" FontSize="Large" Placeholder="Страна"/>
+            <Entry Text="{Binding MCurort}" x:Name="Curort" FontSize="Large" Placeholder="Курорт"/>
+            <Picker x:Name="categoryPicker" Title="Категория" ItemsSource="{Binding Lst5}" FontSize="Large"/>
+            <Entry Text="{Binding MName}" x:Name="Name" FontSize="Large" Placeholder="Название"/>
+            <Editor HeightRequest="190" Text="{Binding MDescription}" x:Name="Description" FontSize="Large" Placeholder="Описание"/>
+            <Label Text="Комнаты" FontSize="Large"/>
+            <ScrollView HeightRequest="100">
+                <ListView x:Name="listview" ItemsSource="{Binding Rooms}" ItemTapped="ListView_ItemTapped" RowHeight="70">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Border Stroke="Gray" Margin="5">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="20" />
+                                    </Border.StrokeShape>
+                                    <VerticalStackLayout BackgroundColor ="#1c1c1c" Padding="5">
+                                        <Label Text="{Binding Name}" FontSize="Body" />
+                                        <Label Text="{Binding CountPeaple}" FontSize="Body" />
+                                    </VerticalStackLayout>
+                                </Border>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            </ScrollView>
+        </VerticalStackLayout>
+        <VerticalStackLayout VerticalOptions="End">
+            <Button Text="Добавить комнату" Clicked="Room_Button_Clicked" BackgroundColor="#E85021" TextColor="White" FontSize="Large" Margin="5"/>
+            <Button Text="Ок" Clicked="Ok_Button_Clicked" BackgroundColor="#E85021" TextColor="White" FontSize="Large" Margin="5"/>
+            <Button Text="Удалить"
                 Clicked="Remove_Button_Clicked"
                 BorderColor ="White"
                 BackgroundColor="#1c1c1c"
-                TextColor="White"/>
-    </VerticalStackLayout>
+                TextColor="White" FontSize="Large" Margin="5"/>
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>

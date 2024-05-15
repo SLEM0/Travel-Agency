@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:OOP.Converters"
+             x:Class="OOP.BookingList">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:StatusToColorConverter x:Key="StatusToColor"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <VerticalStackLayout>
+        <ListView x:Name="listview" ItemsSource="{Binding Bookings}" RowHeight="245">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Border Stroke="Gray" Margin="5">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="20" />
+                                </Border.StrokeShape>
+                                <Grid>
+                                    <StackLayout Margin="5">
+                                        <Label Text="{Binding Tour.Hotel.Name}" FontSize="Large" />
+                                        <Label Text="{Binding Client.FullName}" FontSize="Large" TextColor="#E85021"/>
+                                        <Label Text="{Binding Tour.Room.Name}" FontSize="Body" />
+                                        <HorizontalStackLayout>
+                                            <Label Text="c " FontSize="Body"/>
+                                            <Label Text="{Binding Tour.BeginDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="Body" />
+                                            <Label Text=" по " FontSize="Body"/>
+                                            <Label Text="{Binding Tour.EndDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="Body" />
+                                        </HorizontalStackLayout>
+                                        <HorizontalStackLayout>
+                                            <Label Text="Количество мест: " />
+                                            <Label Text="{Binding CountPeaple}" />
+                                        </HorizontalStackLayout>
+                                        <Label x:Name="StatusLabel" Text="{Binding Status}" FontSize="Body" TextColor="{Binding Status, Converter={StaticResource StatusToColor}}"/>
+                                    </StackLayout>
+                                    <VerticalStackLayout VerticalOptions="End">
+                                        <Button Text="Изменить статус" Clicked="Change_Button_Clicked" CommandParameter="{Binding}" BackgroundColor="#E85021" TextColor="White" FontSize="Body" Margin="5"/>
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Border>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>

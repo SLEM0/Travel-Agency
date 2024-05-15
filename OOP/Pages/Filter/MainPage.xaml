@@ -23,9 +23,10 @@
             <Setter Property="TextColor" Value="White" />
         </Style>
     </ContentPage.Resources>
-    <VerticalStackLayout Margin="20">
+    <ScrollView>
+    <VerticalStackLayout Margin="10">
         <Label Text="Город вылета"/>
-        <ScrollView HeightRequest="60">
+        <ScrollView HeightRequest="80">
             <CollectionView ItemsSource="{Binding Departure}"
                             SelectionMode="Multiple"
                             SelectionChanged="OnCollectionViewSelectionChanged1">
@@ -33,14 +34,14 @@
                     <DataTemplate>
                         <Grid>
                             <Label Text="{Binding .}"
-                                   Style="{StaticResource WhiteText}" />
+                                   Style="{StaticResource WhiteText}" FontSize="Large"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </ScrollView>
-        <Label Text="Страна"/>
-        <ScrollView HeightRequest="60">
+            <Label Text="Страна"/>
+        <ScrollView HeightRequest="80">
             <CollectionView ItemsSource="{Binding Countries}"
                     SelectionMode="Multiple"
                     SelectionChanged="OnCollectionViewSelectionChanged2">
@@ -48,14 +49,14 @@
                     <DataTemplate>
                         <Grid>
                             <Label Text="{Binding .}"
-                           Style="{StaticResource WhiteText}" />
+                           Style="{StaticResource WhiteText}" FontSize="Large"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </ScrollView>
-        <Label Text="Курорт"/>
-        <ScrollView HeightRequest="60">
+            <Label Text="Курорт"/>
+        <ScrollView HeightRequest="80">
             <CollectionView ItemsSource="{Binding Curorts}"
                     SelectionMode="Multiple"
                     SelectionChanged="OnCollectionViewSelectionChanged3">
@@ -63,26 +64,26 @@
                     <DataTemplate>
                         <Grid>
                             <Label Text="{Binding .}"
-                           Style="{StaticResource WhiteText}" />
+                           Style="{StaticResource WhiteText}" FontSize="Large"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </ScrollView>
-        <Label Text="Дата вылета"/>
+            <Label Text="Дата вылета"/>
         <HorizontalStackLayout>
-            <Label Text="От" />
-            <DatePicker x:Name="MinDate" Format="d" Margin="10"/>
-            <Label Text="До" />
-            <DatePicker x:Name="MaxDate" Format="d" Margin="10"/>
+                <Label Text="От"/>
+                <DatePicker x:Name="MinDate" Format="d" Margin="10"/>
+                <Label Text="До"/>
+                <DatePicker x:Name="MaxDate" Format="d" Margin="10"/>
         </HorizontalStackLayout>
-        <Label Text="Количество ночей" />
+            <Label Text="Количество ночей"/>
         <HorizontalStackLayout>
-            <Picker x:Name="MinNights" Title="От" ItemsSource="{Binding Lst30}" Margin="10"/>
-            <Picker x:Name="MaxNights" Title="До" ItemsSource="{Binding Lst30}" Margin="10"/>
+                <Picker x:Name="MinNights" Title="От" ItemsSource="{Binding Lst30}" Margin="10"/>
+                <Picker x:Name="MaxNights" Title="До" ItemsSource="{Binding Lst30}" Margin="10"/>
         </HorizontalStackLayout>
-        <Label Text="Питание"/>
-        <ScrollView HeightRequest="60">
+            <Label Text="Питание"/>
+        <ScrollView HeightRequest="80">
             <CollectionView ItemsSource="{Binding Eat}"
                     SelectionMode="Multiple"
                     SelectionChanged="OnCollectionViewSelectionChanged4">
@@ -90,21 +91,23 @@
                     <DataTemplate>
                         <Grid>
                             <Label Text="{Binding .}"
-                                   Style="{StaticResource WhiteText}" />
+                                   Style="{StaticResource WhiteText}" FontSize="Large"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </ScrollView>
-        <Picker x:Name="category" Title="Минимальная категория отеля" ItemsSource="{Binding Lst5}" Margin="10"/>
-        <Picker x:Name="people" Title="Количество человек" ItemsSource="{Binding Lst5}" Margin="10"/>
+            <Picker x:Name="category" Title="Минимальная категория отеля" ItemsSource="{Binding Lst5}" Margin="10"/>
+            <Picker x:Name="people" Title="Количество человек" ItemsSource="{Binding Lst5}" Margin="10"/>
+            <Entry x:Name="MaxPrice" Placeholder="Максимальная cтоимость ($)"/>
         <Button Text="Найти туры" BackgroundColor="#E85021"
-        Margin="30"
+        Margin="10"
         TextColor="White"
         WidthRequest="350"
         FontSize="20"
         VerticalOptions="EndAndExpand"
         Clicked="Ok_Button_Clicked"/>
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 
 </ContentPage>

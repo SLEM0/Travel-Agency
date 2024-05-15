@@ -3,23 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OOP.HotelList"
              Title="Список отелей">
-    <VerticalStackLayout>
-        <ListView x:Name="listview" ItemsSource="{Binding Hotels}" ItemTapped="ListView_ItemTapped" RowHeight="120">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <ViewCell.View>
-                            <StackLayout>
-                                <Label Text="{Binding Name}" FontSize="18" />
-                                <Label Text="{Binding Category}" FontSize="14" />
-                                <Label Text="{Binding Country}" FontSize="14" />
-                                <Label Text="{Binding Curort}" FontSize="14" />
-                            </StackLayout>
-                        </ViewCell.View>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <Button Text="Добавить отель" Clicked="Add_Hotel_Button_Clicked" BackgroundColor="#E85021" TextColor="White"/>
-    </VerticalStackLayout>
+    <ScrollView>
+        <Grid>
+            <VerticalStackLayout>
+                <ListView x:Name="listview" ItemsSource="{Binding Hotels}" ItemTapped="ListView_ItemTapped" RowHeight="150">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Border Stroke="Gray" Margin="5">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="20" />
+                                        </Border.StrokeShape>
+                                        <VerticalStackLayout BackgroundColor ="#1c1c1c" Padding="5">
+                                            <Label Text="{Binding Name}" FontSize="Large" />
+                                            <Label Text="{Binding Category}" FontSize="Large" />
+                                            <Label Text="{Binding Country}" FontSize="Body" />
+                                            <Label Text="{Binding Curort}" FontSize="Body" />
+                                        </VerticalStackLayout>
+                                    </Border>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </VerticalStackLayout>
+            <Button Text="Добавить отель" Clicked="Add_Hotel_Button_Clicked" BackgroundColor="#E85021" VerticalOptions="EndAndExpand" TextColor="White" Margin="25" FontSize="Large"/>
+        </Grid>
+    </ScrollView>
 </ContentPage>

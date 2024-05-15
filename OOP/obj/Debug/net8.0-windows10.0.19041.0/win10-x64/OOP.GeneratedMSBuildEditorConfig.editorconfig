@@ -30,12 +30,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Contacts.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\Contacts.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Contacts.xaml
 
-[C:/Users/User/source/repos/OOP/OOP/Pages/FaforitesTours.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.FaforitesTours.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\FaforitesTours.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\FaforitesTours.xaml
-
 [C:/Users/User/source/repos/OOP/OOP/Pages/Favorites.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Favorites.xaml
@@ -60,11 +54,23 @@ build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Filter.MainPage.
 build_metadata.AdditionalFiles.TargetPath = Pages\Filter\MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Filter\MainPage.xaml
 
-[C:/Users/User/source/repos/OOP/OOP/Pages/Filter/TourInfo.xaml]
+[C:/Users/User/source/repos/OOP/OOP/Pages/Filter/Nothing.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Filter.TourInfo.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\Filter\TourInfo.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\Filter\TourInfo.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Filter.Nothing.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Filter\Nothing.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Filter\Nothing.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Filter/ReplyList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Filter.ReplyList.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Filter\ReplyList.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Filter\ReplyList.xaml
+
+[C:/Users/User/source/repos/OOP/OOP/Pages/Filter/ReviewList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Filter.ReviewList.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Filter\ReviewList.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Filter\ReviewList.xaml
 
 [C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/AddHotel.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -96,11 +102,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.Ad
 build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\AdminProfile.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\AdminProfile.xaml
 
-[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/AdminReply.xaml]
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/BookingList.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.AdminReply.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\AdminReply.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\AdminReply.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Admin.BookingList.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Admin\BookingList.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Admin\BookingList.xaml
 
 [C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Admin/ClientsList.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -168,11 +174,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Client.C
 build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Client\ClientProfile.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Client\ClientProfile.xaml
 
-[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Client/ClientReply.xaml]
+[C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Client/ClientReplyList.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Client.ClientReply.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Client\ClientReply.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Client\ClientReply.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OOP.Pages.Profile.Client.ClientReplyList.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Profile\Client\ClientReplyList.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Profile\Client\ClientReplyList.xaml
 
 [C:/Users/User/source/repos/OOP/OOP/Pages/Profile/Client/Settings.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

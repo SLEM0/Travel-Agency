@@ -6,27 +6,42 @@ namespace OOP;
 public partial class ClientBookings : ContentPage
 {
 	public ObservableCollection<Booking> Bookings { get; set; }
-	public ClientBookings()
+    readonly AgencyEntry _agencyEntry;
+	public ClientBookings(AgencyEntry agencyEntry)
 	{
-        if (EntryPage.CurrentClient != null)
-		    Bookings = new(EntryPage.CurrentClient.Bookings);
+        _agencyEntry = agencyEntry;
+        if (_agencyEntry.CurrentUser is Client client)
+		    Bookings = new(client.Bookings);
         else
             Bookings = [];
 		BindingContext = this;
 		InitializeComponent();
 	}
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        if (_agencyEntry.CurrentUser is Client client)
+            Bookings = new(client.Bookings);
+        OnPropertyChanged(nameof(Bookings));
+    }
 
-    private async void Pay_Button_Clicked(object sender, EventArgs e)
+    private async void Remove_Button_Clicked(object sender, EventArgs e)
     {
         Button button = (Button)sender;
         Booking booking = (Booking)button.CommandParameter;
-		booking.Pay();
+        if (_agencyEntry.CurrentUser is Client client)
+        {
+            client.RemoveBooking(booking);
+            Bookings = new(client.Bookings);
+        }
+        
+        OnPropertyChanged(nameof(Bookings));
 		await Navigation.PopAsync();
     }
     private async void Review_Button_Clicked(object sender, EventArgs e)
     {
         Button button = (Button)sender;
         Booking booking = (Booking)button.CommandParameter;
-        await Navigation.PushAsync(new AddReview(booking.Tour));
+        await Navigation.PushAsync(new AddReview(_agencyEntry, booking.Tour.Hotel));
     }
 }

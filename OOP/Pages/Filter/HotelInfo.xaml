@@ -4,32 +4,75 @@
              x:Class="OOP.HotelInfo"
              Title="Об отеле">
     <VerticalStackLayout>
-        <Label Text="Страна" />
-        <Label Text="{Binding Hotel.Country}"/>
-        <Label Text="Курорт" />
-        <Label Text="{Binding Hotel.Curort}"/>
-        <Label Text="Категория" />
-        <Label Text="{Binding Hotel.Category}"/>
-        <Label Text="Название" />
-        <Label Text="{Binding Hotel.Name}"/>
-        <Label Text="Описание" />
-        <Label Text="{Binding Hotel.Description}"/>
-        <Label Text="Туры" />
-        <ListView x:Name="listview" ItemsSource="{Binding Tours}" ItemTapped="ListView_ItemTapped" RowHeight="120">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <ViewCell.View>
-                            <StackLayout>
-                                <Label Text="{Binding Hotel.Name}" FontSize="18" />
-                                <Label Text="{Binding Eat}" FontSize="16" />
-                                <Label Text="{Binding Room.Name}" FontSize="16" />
-                                <Label Text="{Binding AvailablePlaces}" FontSize="14" />
-                            </StackLayout>
-                        </ViewCell.View>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <HorizontalStackLayout>
+            <Label Text="{Binding Hotel.Category}" FontSize="Body" Margin="5"/>
+            <Label Text=" "/>
+            <Image Source="star.png" HeightRequest="17"/>
+            </HorizontalStackLayout>
+            <Label Text="{Binding Hotel.Name}" FontSize="Large" Margin="5" TextColor="#E85021"/>
+        <HorizontalStackLayout Margin="5">
+            <Label Text="{Binding Hotel.Country}" FontSize="Body"/>
+            <Label Text=", " FontSize="Body" />
+            <Label Text="{Binding Hotel.Curort}" FontSize="Body" />
+        </HorizontalStackLayout>
+        <Label Margin="10"/>
+        <ScrollView>
+            <Label MaxLines="10" Text="{Binding Hotel.Description}" FontSize="Body"/>
+        </ScrollView>
+        <Label Margin="10"/>
+        <Button Text="Читать отзывы"
+Clicked="Reviews_Button_Clicked"
+BorderColor ="White"
+BackgroundColor="#1c1c1c"
+TextColor="White" Margin="20" FontSize="Body"/>
+        <Label Text="Туры" FontSize="Body"/>
+        <ScrollView>
+            <ListView x:Name="listview" ItemsSource="{Binding Tours}" RowHeight="120" Margin="5">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Border Stroke="Gray" HeightRequest="120">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="20" />
+                                    </Border.StrokeShape>
+                                    <VerticalStackLayout>
+                                        <HorizontalStackLayout HeightRequest="70" Margin="5">
+                                        <VerticalStackLayout WidthRequest="300">
+                                            <HorizontalStackLayout>
+                                                <Label Text="c " FontSize="Body"/>
+                                                    <Label Text="{Binding BeginDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="Body" />
+                                                <Label Text=" по " FontSize="Body"/>
+                                                    <Label Text="{Binding EndDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="Body" />
+                                            </HorizontalStackLayout>
+                                            <Label Text="{Binding Room.Name}" />
+                                            <Label Text="{Binding Eat}" />
+                                        </VerticalStackLayout >
+                                            <Border Stroke="Gray" BackgroundColor="#1c1c1c" HeightRequest="50">
+                                            <Border.StrokeShape>
+                                                <RoundRectangle CornerRadius="20" />
+                                            </Border.StrokeShape>
+                                            <HorizontalStackLayout>
+                                                <Label Text=" " FontSize="Large" VerticalOptions="Center"/>
+                                                <Label Text="{Binding Price}" FontSize="Large" VerticalOptions="Center"/>
+                                                <Label Text="$ " FontSize="Large" VerticalOptions="Center"/>
+                                            </HorizontalStackLayout>
+                                        </Border>
+                                    </HorizontalStackLayout>
+                                        <Button Text="Заказать"
+                                                FontSize="Body"
+                                                BackgroundColor="#E85021"
+                                                TextColor="White"
+                                                Clicked="Add_Booking_Button_Clicked"
+                                                CommandParameter="{Binding}"/>
+                                    </VerticalStackLayout>
+                                </Border>
+
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
     </VerticalStackLayout>
 </ContentPage>

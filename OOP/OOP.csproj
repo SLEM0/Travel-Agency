@@ -61,11 +61,15 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.14" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.14" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Compile Update="Pages\Filter\FilterPage.xaml.cs">
 	    <DependentUpon>FilterPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\Filter\ReplyList.xaml.cs">
+	    <DependentUpon>ReplyList.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Pages\Profile\EntryPage.xaml.cs">
 	    <DependentUpon>EntryPage.xaml</DependentUpon>
@@ -73,16 +77,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Pages\FaforitesTours.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Pages\Filter\FilterPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\Filter\HotelInfo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Filter\TourInfo.xaml">
+	  <MauiXaml Update="Pages\Filter\ReplyList.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Filter\Nothing.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Filter\ReviewList.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\Profile\Admin\AddHotel.xaml">
@@ -100,7 +107,7 @@
 	  <MauiXaml Update="Pages\Profile\Admin\AdminProfile.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Profile\Admin\AdminReply.xaml">
+	  <MauiXaml Update="Pages\Profile\Admin\BookingList.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\Profile\Admin\EditHotel.xaml">
@@ -139,7 +146,7 @@
 	  <MauiXaml Update="Pages\Contacts.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Profile\Client\ClientReply.xaml">
+	  <MauiXaml Update="Pages\Profile\Client\ClientReplyList.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\Profile\EntryPage.xaml">

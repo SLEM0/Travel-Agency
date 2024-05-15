@@ -19,16 +19,17 @@
     <Shell.TabBarUnselectedColor>
         <Color>White</Color>
     </Shell.TabBarUnselectedColor>
-    <TabBar>
+
+    <TabBar x:Name="TabBarName">
         <Tab
             Title="Главная"
             Icon="zalupa.png">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
         <Tab
-            Title="Избранное"
-            Icon="like.png">
-            <ShellContent x:Name="Fav" ContentTemplate="{DataTemplate local:Favorites}" />
+            Title="Заказы"
+            Icon="booking.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Favorites}" />
         </Tab>
         <Tab
             Title="Контакты"
@@ -38,8 +39,7 @@
         <Tab
             Title="Профиль"
             Icon="profile.png">
-            <ShellContent x:Name="Prof" ContentTemplate="{DataTemplate local:Profile}" />
+            <ShellContent ContentTemplate="{DataTemplate local:Profile}" />
         </Tab>
     </TabBar>
 </Shell>
-

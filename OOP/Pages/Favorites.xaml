@@ -6,13 +6,13 @@
     <Grid>
         <VerticalStackLayout HorizontalOptions="Center"
                              VerticalOptions="Start"
-                             Margin="100">
+                             Margin="50">
             <Image Source="key.png"  WidthRequest="100"/>
-            <Label Text="Войдите в профиль"
+            <Label Text="Войдите в профиль" HorizontalTextAlignment="Center"
                    FontSize="30"
                    HorizontalOptions="Center"
                    Margin="20"/>
-            <Label Text="чтобы добавить понравившиеся вам туры"
+            <Label Text="чтобы добавить понравившиеся вам туры" HorizontalTextAlignment="Center"
                    TextColor="LightGray"
                    FontSize="25"
                    HorizontalOptions="Center"/>
@@ -22,12 +22,12 @@
                 <RoundRectangle CornerRadius="15, 15, 0, 0"/>
             </Border.StrokeShape>
             <VerticalStackLayout BackgroundColor ="#1c1c1c">
-                <Button Text="Войти" BackgroundColor="#E85021"
+                <Button Text="Войти" BackgroundColor="#E85021" Clicked="OpenEntry_Clicked"
             Margin="30"
             TextColor="White"
             WidthRequest="350"
             FontSize="20"/>
-                <Button Text="Зарегестрироваться"
+                <Button Text="Зарегестрироваться" Clicked="OpenRegistration_Clicked"
             BorderColor ="White"
             BorderWidth="2"
             Margin="20"

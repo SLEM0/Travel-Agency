@@ -5,29 +5,31 @@ namespace OOP;
 
 public partial class ToursList : ContentPage
 {
+    private readonly Agency _agency;
     public ObservableCollection<Tour> Tours { get; set; }
 
-    public ToursList()
+    public ToursList(Agency agency)
     {
+        _agency = agency;
         InitializeComponent();
-        Tours = new(MainPage.MyAgency.Tours);
+        Tours = new(_agency.Tours);
         BindingContext = this;
     }
     protected override void OnAppearing()
     {
         base.OnAppearing();
-        Tours = new(MainPage.MyAgency.Tours);
+        Tours = new(_agency.Tours);
         OnPropertyChanged(nameof(Tours));
     }
     private async void Add_Tour_Button_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new AddTour());
+        await Navigation.PushAsync(new AddTour(_agency));
     }
     private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
         if (e.Item is Tour selectedTour)
         {
-            await Navigation.PushAsync(new EditTour(selectedTour));
+            await Navigation.PushAsync(new EditTour(_agency,selectedTour));
         }
     }
 }

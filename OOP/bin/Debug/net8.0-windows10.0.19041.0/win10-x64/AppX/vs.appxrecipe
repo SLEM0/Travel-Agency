@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\User\source\repos\OOP\OOP\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-07T19:11:42.072</Modified>
+      <Modified>2024-05-14T19:20:16.762</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-07T19:11:41.701</Modified>
+      <Modified>2024-05-14T19:16:37.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\OOP.runtimeconfig.json">
       <PackagePath>OOP.runtimeconfig.json</PackagePath>
-      <Modified>2024-04-02T18:25:23.539</Modified>
+      <Modified>2024-04-16T20:27:45.585</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\OOP.dll">
       <PackagePath>OOP.dll</PackagePath>
-      <Modified>2024-04-07T19:11:39.423</Modified>
+      <Modified>2024-05-14T19:20:15.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>OOP.exe</PackagePath>
-      <Modified>2024-04-07T19:11:39.507</Modified>
+      <Modified>2024-05-14T19:20:15.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -269,25 +269,33 @@
       <PackagePath>beach.scale-100.jpg</PackagePath>
       <Modified>2024-02-27T20:50:22.273</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\booking.scale-100.png">
+      <PackagePath>booking.scale-100.png</PackagePath>
+      <Modified>2024-04-25T12:19:17.332</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-02-28T17:38:54.080</Modified>
+      <Modified>2024-04-26T15:27:20.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-02-28T17:38:54.096</Modified>
+      <Modified>2024-04-26T15:27:20.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-02-28T17:38:54.115</Modified>
+      <Modified>2024-04-26T15:27:20.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-02-28T17:38:54.143</Modified>
+      <Modified>2024-04-26T15:27:20.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-02-28T17:38:54.223</Modified>
+      <Modified>2024-04-26T15:27:20.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\exit.scale-100.png">
+      <PackagePath>exit.scale-100.png</PackagePath>
+      <Modified>2024-04-25T13:00:48.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_qwerty.scale-100.png">
       <PackagePath>icon_qwerty.scale-100.png</PackagePath>
@@ -309,6 +317,10 @@
       <PackagePath>merto.scale-100.png</PackagePath>
       <Modified>2024-02-25T20:58:49.456</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\nopalm.scale-100.png">
+      <PackagePath>nopalm.scale-100.png</PackagePath>
+      <Modified>2024-04-26T15:04:15.380</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\phone.scale-100.png">
       <PackagePath>phone.scale-100.png</PackagePath>
       <Modified>2024-02-25T20:56:58.795</Modified>
@@ -316,6 +328,14 @@
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-100.png">
       <PackagePath>profile.scale-100.png</PackagePath>
       <Modified>2024-02-25T17:33:01.137</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sms.scale-100.png">
+      <PackagePath>sms.scale-100.png</PackagePath>
+      <Modified>2024-04-26T15:21:59.211</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\star.scale-100.png">
+      <PackagePath>star.scale-100.png</PackagePath>
+      <Modified>2024-04-21T18:20:20.493</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\telegram.scale-100.png">
       <PackagePath>telegram.scale-100.png</PackagePath>
@@ -331,7 +351,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\OOP\OOP\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\OOP.deps.json">
       <PackagePath>OOP.deps.json</PackagePath>
-      <Modified>2024-04-07T19:11:41.336</Modified>
+      <Modified>2024-05-14T19:16:37.116</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -472,6 +492,22 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.windowsappsdk\1.4.240211001\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2024-02-11T20:01:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\sqlite-net-pcl\1.9.172\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2024-03-27T22:22:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\sqlitepclraw.bundle_green\2.1.2\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2022-09-18T19:28:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\sqlitepclraw.core\2.1.2\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2022-09-18T19:26:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.2\lib\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2022-09-18T19:27:06.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\system.speech\8.0.0\runtimes\win\lib\net8.0\System.Speech.dll">
       <PackagePath>System.Speech.dll</PackagePath>
@@ -620,6 +656,10 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.windowsappsdk\1.4.240211001\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2024-02-11T15:05:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.2\runtimes\win-x64\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2022-09-18T19:20:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.maui.controls.compatibility\8.0.14\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

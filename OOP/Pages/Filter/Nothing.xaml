@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOP.Nothing">
+    <VerticalStackLayout HorizontalOptions="Center"
+                             VerticalOptions="Start"
+                             Margin="20">
+        <Label Text=" " Margin="60" FontSize="Large"/>
+        <Image x:Name="MyImage" WidthRequest="100"/>
+        <Label x:Name="Label1"
+                   FontSize="30"
+                   HorizontalOptions="Center"
+                   Margin="20" HorizontalTextAlignment="Center"/>
+        <Label x:Name="Label2"
+                   TextColor="LightGray"
+                   FontSize="25"
+                   HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

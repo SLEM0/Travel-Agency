@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="OOP.Pages.Profile.Client.ClientChangeName"
+             x:Class="OOP.ClientChangeName"
              Title="Изменить мои данные">
-    <VerticalStackLayout>
-        <Label Text="Фамилия" />
-        <Entry x:Name="LastName"/>
-        <Label Text="Имя" />
-        <Entry x:Name="FirstName"/>
-        <Label Text="Подтердите пароль" />
-        <Entry x:Name="Password"/>
-        <Button Text="Ок" Clicked="Ok_Button_Clicked" BackgroundColor="#E85021" TextColor="White"/>
+    <Grid>
+        <VerticalStackLayout>
+        <Label Text="Фамилия" FontSize="Large"/>
+        <Entry x:Name="LastName" FontSize="Large"/>
+        <Label Text="Имя" FontSize="Large"/>
+        <Entry x:Name="FirstName" FontSize="Large"/>
+        <Label Text="Подтердите пароль" FontSize="Large"/>
+        <Entry x:Name="Password" FontSize="Large" IsPassword="True"/>
     </VerticalStackLayout>
+        <VerticalStackLayout VerticalOptions="End">
+        <Button Text="Ок" Clicked="Ok_Button_Clicked" BackgroundColor="#E85021" TextColor="White" FontSize="Large" Margin="25"/>
+    </VerticalStackLayout>
+    </Grid>
 </ContentPage>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:OOP.Converters"
+             x:Class="OOP.ReviewList"
+             Title="Отзывы">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:LengthToBoolConverter x:Key="LengthToBool"/>
+            <converters:LengthToSubstringConverter x:Key="LengthToMaxLine" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView>
+        <StackLayout>
+            <CollectionView ItemsSource="{Binding Reviews}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <HorizontalStackLayout Margin="10">
+                                <Label Text="{Binding Client.LastName}" FontSize="Body" FontAttributes="Bold"/>
+                                <Label Text=" " FontSize="Body"/>
+                                <Label Text="{Binding Client.FirstName}" FontSize="Body" FontAttributes="Bold"/>
+                            </HorizontalStackLayout>
+                            <Label Text="{Binding Date, StringFormat='{0:dd/MM/yyyy}'}" />
+                            <HorizontalStackLayout>
+                                <Label Text="{Binding Rating}" />
+                                <Label Text=" "/>
+                                <Image Source="star.png" HeightRequest="17"/>
+                            </HorizontalStackLayout>
+                            <Label x:Name="commentLabel" Text="{Binding Text, Converter={StaticResource LengthToMaxLine}}" FontSize="Body"/>
+
+                            <HorizontalStackLayout>
+                                <Button Text="Ответы" WidthRequest="130" Clicked="Reply_Button_Clicked" CommandParameter="{Binding}"
+                                    BackgroundColor="#1c1c1c"
+                                    TextColor="White" FontSize="Default" HorizontalOptions="End" BorderColor="#E85021" BorderWidth="1"/>
+                                <Label Text="               " FontSize="Large"/>
+                                <Button Text="Развернуть" Clicked="OnExpandClicked"
+                                        Command="{Binding MyCommand}"
+                                    BackgroundColor="#1c1c1c" WidthRequest="130"
+                                    TextColor="White" FontSize="Body" HorizontalOptions="Start" BorderColor="#E85021" BorderWidth="1"
+                                        IsVisible="{Binding Text, Converter={StaticResource LengthToBool}}">
+                                </Button>
+                            </HorizontalStackLayout>
+                            
+                            <Label Text=" " FontSize="Large" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

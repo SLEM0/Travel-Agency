@@ -3,18 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OOP.AddTour"
              Title="Добавить тур">
-    <VerticalStackLayout>
-        <Picker x:Name="hotelPicker" Title="Отель"  ItemsSource="{Binding Hotels}" SelectedItem="{Binding MyHotel}" ItemDisplayBinding="{Binding Name}"/>
-        <Picker x:Name="eatPicker" Title="Пиатние" ItemsSource="{Binding Eat}"/>
-        <Picker x:Name="roomPicker" Title="Комната" ItemsSource="{Binding Rooms}" ItemDisplayBinding="{Binding Name}"/>
-        <Label Text="Дата вылета" />
-        <DatePicker x:Name="beginDate"/>
-        <Label Text="Дата прилета" />
-        <DatePicker x:Name="endDate"/>
-        <Label Text="Место отправления" />
-        <Entry x:Name="departure"/>
-        <Label Text="Количество мест" />
-        <Entry x:Name="plases"/>
-        <Button Text="Ок" Clicked="Ok_Button_Clicked" BackgroundColor="#E85021" TextColor="White"/>
-    </VerticalStackLayout>
+    <ScrollView>
+        <Grid>
+        <VerticalStackLayout>
+        <Picker x:Name="hotelPicker" Title="Отель"  ItemsSource="{Binding Hotels}" SelectedItem="{Binding MyHotel}" ItemDisplayBinding="{Binding Name}" FontSize="Large"/>
+        <Picker x:Name="eatPicker" Title="Пиатние" ItemsSource="{Binding Eat}" FontSize="Large"/>
+            <Picker x:Name="roomPicker" Title="Комната" ItemsSource="{Binding Rooms}" ItemDisplayBinding="{Binding Name}" FontSize="Large"/>
+            <Label Text="Дата вылета" FontSize="Large"/>
+            <DatePicker x:Name="beginDate" FontSize="Large" />
+            <Label Text="Дата прилета" FontSize="Large"/>
+                <DatePicker x:Name="endDate" FontSize="Large"/>
+                <Entry x:Name="departure" FontSize="Large" Placeholder="Место отправления"/>
+                <Entry x:Name="plases" FontSize="Large" Placeholder="Количество мест"/>
+                <Entry x:Name="price" FontSize="Large" Placeholder="Стоимость ($)"/>
+        </VerticalStackLayout >
+        <Button Text="Ок" Clicked="Ok_Button_Clicked" BackgroundColor="#E85021" TextColor="White" FontSize="Large" Margin="25" VerticalOptions="End"/>
+    </Grid>
+    </ScrollView>
 </ContentPage>

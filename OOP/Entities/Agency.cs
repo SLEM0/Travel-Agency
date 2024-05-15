@@ -1,53 +1,47 @@
-﻿namespace OOP.Entities
+﻿using System.Net;
+
+namespace OOP.Entities
 {
     public class Agency
     {
-        static Hotel myHotel1 = new(
-            new List<Room>([new("STANDART ROOM", 3), new("DELUXE ROOM", 3)]),
-            "Египет", "Хургада", 3, "Elysees Hotel", "xz",
-            new List<string>(["AI", "BB", "HB"]));
-        static Hotel myHotel2 = new(
-            new List<Room>([new("Room without Air Conditions", 3), new Room("Room with Air Conditions", 3)]),
-            "Турция", "Alanya", 3, "Kleopatra Aytur Apart Hotel", "xz-xz-xz",
-            new List<string>(["BB", "RO"]));
-        static Hotel myHotel3 = new(
-            new List<Room>([new("STANDART ROOM", 2), new("APART ROOM", 4)]),
-            "Египет", "Шарм-эль-шейх", 4, "Naama Blue", "xz-xz",
-            new List<string>(["AI", "HB"]));
-        static Hotel myHotel4 = new(
-            new List<Room>([new("villa", 4), new("super", 3)]),
-            "Турция", "Alanya", 4, "Smile Hotel", "xz-xz-xz-xz",
-            new List<string>(["BB"]));
-        static Hotel myHotel5 = new(
-            new List<Room>([new("STANDART ROOM", 2), new("DELUXE ROOM", 3), new("SINGLE ROOM", 1)]),
-            "Индонезия", "Kuta", 5, "Bakung Beach Resort", "xz-xz-xz-xz-xz",
-            new List<string>(["AI", "BB", "HB"]));
-        static Tour myTour1 = new(myHotel1, 40, new(2024, 4, 8), new(2024, 4, 15), "Minsk", "AI", myHotel1.Rooms[0]);
-        static Tour myTour2 = new(myHotel1, 50, new(2024, 4, 8), new(2024, 4, 10), "Polotsk", "BB", myHotel1.Rooms[0]);
-        static Tour myTour3 = new(myHotel1, 60, new(2024, 4, 8), new(2024, 4, 18), "Minsk", "AI", myHotel1.Rooms[1]);
-        static Tour myTour4 = new(myHotel2, 55, new(2024, 4, 8), new(2024, 4, 19), "Minsk", "RO", myHotel2.Rooms[0]);
-        static Tour myTour5 = new(myHotel2, 50, new(2024, 4, 8), new(2024, 4, 14), "Minsk", "RO", myHotel2.Rooms[1]);
-        public List<Tour> Tours { get; } = [myTour1, myTour2, myTour3, myTour4, myTour5];
-        public List<Hotel> Hotels { get; } = [myHotel1, myHotel2, myHotel3, myHotel4, myHotel5];
-        public List<Review> Reviews { get; }
-        public Agency()
+        private readonly IDbService _dbService;
+        public List<Tour> Tours { get; private set; } = [];
+        public List<Hotel> Hotels { get; private set; } = [];
+        public Agency(IDbService dbService)
         {
-            Reviews = Tours.SelectMany(tour => tour.Reviews).ToList();
+            _dbService = dbService;
+            _dbService.CreateTable<Room>();
+            _dbService.CreateTable<Hotel>();
+            _dbService.CreateTable<Tour>();
+            LoadData();
         }
-        public void AddTour(Hotel hotel, int places, DateTime beginDate, DateTime endDate, string departure, string eat, Room room)
+        public void AddTour(Hotel hotel, int places, DateTime beginDate, DateTime endDate, string departure, string eat, Room room, double price)
         {
-            Tour newTour = new(hotel, places, beginDate, endDate, departure, eat, room);
+            Tour newTour = new(_dbService, hotel, places, beginDate, endDate, departure, eat, room, price);
             Tours.Add(newTour);
+            _dbService.AddEntity(newTour);
         }
 
-        public void AddHotel(List<Room> rooms, string country, string curort, int category, string name, string description, List<string> eat)
+        public void AddHotel(List<Room> rooms, string country, string curort, int category, string name, string description)
         {
-            Hotel newHotel = new(rooms, country, curort, category, name, description, eat);
+            Hotel newHotel = new(_dbService, rooms, country, curort, category, name, description);
             Hotels.Add(newHotel);
+            _dbService.AddEntity(newHotel);
+            foreach (Room r in newHotel.Rooms)
+            {
+                r.HotelId = newHotel.ID;
+                _dbService.AddEntity(r);
+            }
         }
         public void AddHotel(Hotel hotel)
         {
             Hotels.Add(hotel);
+            _dbService.AddEntity(hotel);
+            foreach (Room r in hotel.Rooms)
+            {
+                r.HotelId = hotel.ID;
+                _dbService.AddEntity(r);
+            }
         }
         public List<Tour> FindTour(
             int countPeople,
@@ -59,8 +53,11 @@
             DateTime minDate,
             DateTime maxDate,
             int minDay,
-            int maxDay)
+            int maxDay,
+            double maxPrice)
         {
+            if (Tours.Count == 0)
+                return [];
             List<Tour> foundTours = Tours.Where(tour =>
                 countries.Contains(tour.Hotel.Country) &&
                 curorts.Contains(tour.Hotel.Curort) &&
@@ -69,7 +66,8 @@
                 eat.Contains(tour.Eat) &&
                 tour.AvailablePlaces >= countPeople &&
                 tour.BeginDate >= minDate && tour.BeginDate <= maxDate &&
-                (tour.EndDate - tour.BeginDate).Days >= minDay && (tour.EndDate - tour.BeginDate).Days <= maxDay
+                (tour.EndDate - tour.BeginDate).Days >= minDay && (tour.EndDate - tour.BeginDate).Days <= maxDay &&
+                tour.Price <= maxPrice
             ).ToList();
             return foundTours;
         }
@@ -91,17 +89,10 @@
             departure.Sort();
             return departure;
         }
-        public List<Review> GetAllReviews()
-        {
-            return Tours.SelectMany(tour => tour.Reviews).ToList();
-        }
-        public List<Review> GetClientReviews(Client? client)
-        {
-            return Tours.SelectMany(tour => tour.Reviews).Where(review => review.Client == client).ToList();
-        }
         public void RemoveTour(Tour tour)
         {
             Tours.Remove(tour);
+            _dbService.DeleteEntity(tour);
         }
         public void RemoveHotel(Hotel hotel)
         {
@@ -109,9 +100,43 @@
             foreach (var tour in toursCopy)
             {
                 if (tour.Hotel == hotel)
+                {
                     Tours.Remove(tour);
+                    _dbService.DeleteEntity(tour);
+                }
             }
             Hotels.Remove(hotel);
+
+            _dbService.DeleteEntity(hotel);
+            foreach (Room r in hotel.Rooms)
+            {
+                r.HotelId = hotel.ID;
+                _dbService.DeleteEntity(r);
+            }
+        }
+        public double MaxPrice()
+        {
+            if (Tours.Count == 0)
+                return 0;
+            return Tours.Max(tour => tour.Price);
+        }
+        private void LoadData()
+        {
+            Hotels = (List<Hotel>)_dbService.GetAllEntities<Hotel>();
+            foreach (var hotel in Hotels)
+            {
+                hotel.Rooms = ((List<Room>)_dbService.GetAllEntities<Room>()).Where(r => r.HotelId == hotel.ID).ToList();
+            }
+            Tours = (List<Tour>)_dbService.GetAllEntities<Tour>();
+            foreach (var tour in Tours)
+            {
+                tour.Hotel = Hotels.FirstOrDefault(h => h.ID == tour.HotelId);
+                if (tour.Hotel != null)
+                {
+                    List<Room> Rooms = tour.Hotel.Rooms;
+                    tour.Room = Rooms.FirstOrDefault(r => r.ID == tour.RoomId);
+                }
+            }
         }
     }
 }

@@ -1,33 +1,57 @@
-﻿namespace OOP.Entities
+﻿using SQLite;
+
+namespace OOP.Entities
 {
-    public class Client(string password, string firstName, string lastName, string email)
+    [Table("Client")]
+    public class Client : User
     {
-        public List<Booking> Bookings { get; } = [];
-        List<Review> Reviews { get; } = [];
-        public string Password { get; private set; } = password;
-        public string FirstName { get; private set; } = firstName;
-        public string LastName { get; private set; } = lastName;
-        public string Email { get; } = email;
-        int? Phone { get; }
-        string? Passport { get; }
+        public Client() : this(new SQLiteService(), "", "", "", "")
+        {
+            // Этот конструктор без параметров не делает ничего, но он требуется для работы с SQLite
+        }
+        public Client(IDbService dbService, string password, string firstName, string lastName, string login)
+        {
+            _dbService = dbService;
+            Bookings = [];
+            Password = password;
+            FirstName = firstName;
+            LastName = lastName;
+            Login = login;
+            FullName = firstName + " " + lastName;
+            _dbService.CreateTable<Booking>();
+        }
+        private readonly IDbService _dbService;
+        //List<Review> Reviews { get; } = [];
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        [Ignore]
+        public List<Booking> Bookings { get; set; }
+        //int? Phone { get; }
+        //string? Passport { get; }
         public void AddBooking(Tour tour, int countPeaple)
         {
-            Booking newBooking = new(this, tour);
+            Booking newBooking = new(this, tour, countPeaple);
             tour.AvailablePlaces -= countPeaple;
             Bookings.Add(newBooking);
+            _dbService.AddEntity(newBooking);
+            _dbService.UpdateEntity(tour);
         }
 
         public void RemoveBooking(Booking booking)
         {
+            _dbService.DeleteEntity(booking);
+            booking.Tour.AvailablePlaces += booking.CountPeaple;
+            _dbService.UpdateEntity(booking.Tour);
             Bookings.Remove(booking);
         }
 
-        public bool UpdateInfo(string password, string firstName, string lastName)
+        public override bool UpdateInfo(string password, string firstName, string lastName)
         {
             if (password == Password)
             {
                 FirstName = firstName;
                 LastName = lastName;
+                _dbService.UpdateEntity(this);
                 return true;
             }
             return false;
@@ -37,6 +61,7 @@
             if (oldPassword == Password)
             {
                 Password = newPassword;
+                _dbService.UpdateEntity(this);
                 return true;
             }
             return false;

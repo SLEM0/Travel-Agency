@@ -1,19 +1,21 @@
-using OOP.Pages.Profile.Client;
+using OOP.Entities;
 
-namespace OOP.Pages.Profile;
+namespace OOP;
 
 public partial class Settings : ContentPage
 {
-	public Settings()
+    readonly AgencyEntry _agencyEntry;
+	public Settings(AgencyEntry agencyEntry)
 	{
+        _agencyEntry = agencyEntry;
 		InitializeComponent();
 	}
     private async void Name_Button_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new ClientChangeName());
+        await Navigation.PushAsync(new ClientChangeName(_agencyEntry));
     }
     private async void Password_Button_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new ClientChangePassword());
+        await Navigation.PushAsync(new ClientChangePassword(_agencyEntry));
     }
 }

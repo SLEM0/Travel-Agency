@@ -2,24 +2,27 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OOP.AdminProfile">
-    <VerticalStackLayout>
-        <Button Text="Клиенты"
+    <Grid>
+        <ImageButton Source="exit.png" Clicked="Logout_Button_Clicked" HeightRequest="50" WidthRequest="50" Margin="15" HorizontalOptions="End" VerticalOptions="Start"/>
+        <VerticalStackLayout Margin="10" VerticalOptions="CenterAndExpand">
+            <Button Text="Клиенты"
                 Clicked="Clients_Button_Clicked"
                 BorderColor ="White"
                 BackgroundColor="#1c1c1c"
-                TextColor="White"/>
+                TextColor="White" Margin="20" FontSize="Large"/>
         <Button Text="Туры"
                 Clicked="Tours_Button_Clicked"
                 BorderColor ="White"
                 BackgroundColor="#1c1c1c"
-                TextColor="White"/>
+                TextColor="White" Margin="20" FontSize="Large"/>
         <Button Text="Отели" Clicked="Hotel_Button_Clicked"
                 BorderColor ="White"
                 BackgroundColor="#1c1c1c"
-                TextColor="White"/>
+                TextColor="White" Margin="20" FontSize="Large"/>
         <Button Text="Отзывы" Clicked="Review_Button_Clicked"
                 BorderColor ="White"
                 BackgroundColor="#1c1c1c"
-                TextColor="White"/>
-    </VerticalStackLayout>
+                TextColor="White" Margin="20" FontSize="Large"/>
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>

@@ -3,16 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OOP.ClientsList"
              Title="Список клиентов">
-    <ListView x:Name="listview" ItemsSource="{Binding Clients}" RowHeight="120">
+    <ListView x:Name="listview" ItemsSource="{Binding Clients}" RowHeight="130">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <ViewCell.View>
-                        <StackLayout>
-                            <Label Text="{Binding LastName}" FontSize="16" />
-                            <Label Text="{Binding FirstName}" FontSize="16" />
-                            <Label Text="{Binding Email}" FontSize="14" />
-                        </StackLayout>
+                        <Border Stroke="Gray" Margin="5">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20" />
+                            </Border.StrokeShape>
+                            <VerticalStackLayout BackgroundColor ="#1c1c1c" Padding="5">
+                                <Label Text="{Binding LastName}" FontSize="Large"/>
+                                <Label Text="{Binding FirstName}" FontSize="Large" />
+                                <Label Text="{Binding Login}" FontSize="Body" />
+                            </VerticalStackLayout>
+                        </Border>
                     </ViewCell.View>
                 </ViewCell>
             </DataTemplate>

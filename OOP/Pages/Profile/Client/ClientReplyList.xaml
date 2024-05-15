@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:OOP.Converters"
+             x:Class="OOP.ClientReplyList"
+             Title="Ответы">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:LengthToBoolConverter x:Key="LengthToBool"/>
+            <converters:LengthToSubstringConverter x:Key="LengthToMaxLine" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <VerticalStackLayout>
+        <HorizontalStackLayout Margin="10">
+            <Label Text="{Binding Review.Client.LastName}" FontSize="Body" FontAttributes="Bold"/>
+            <Label Text=" " FontSize="Body"/>
+            <Label Text="{Binding Review.Client.FirstName}" FontSize="Body" FontAttributes="Bold"/>
+        </HorizontalStackLayout>
+        <Label Text="{Binding Review.Date, StringFormat='{0:dd/MM/yyyy}'}" />
+        <HorizontalStackLayout>
+            <Label Text="{Binding Review.Rating}" />
+            <Label Text=" "/>
+            <Image Source="star.png" HeightRequest="17"/>
+        </HorizontalStackLayout>
+        <Label Text="{Binding Review.Text}" FontSize="Body"/>
+        <Label Text=" " FontSize="Large" />
+        <ScrollView>
+            <StackLayout>
+                <CollectionView ItemsSource="{Binding Replies}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Label Text="{Binding Name}" FontSize="Body" FontAttributes="Bold"/>
+                                <Label Text="{Binding Date, StringFormat='{0:dd/MM/yyyy}'}" />
+                                <Label x:Name="commentLabel" Text="{Binding Text, Converter={StaticResource LengthToMaxLine}}" FontSize="Body"/>
+                                <Button Text="Развернуть" Clicked="OnExpandClicked" CommandParameter="{x:Reference commentLabel}"
+                                BackgroundColor="#1c1c1c" IsVisible="{Binding Text, Converter={StaticResource LengthToBool}}"
+                                TextColor="White" FontSize="Default" HorizontalOptions="Start" BorderColor="#E85021" BorderWidth="1"/>
+                                <Label Text=" " FontSize="Large" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
+        <Button Text="Ответить" Clicked="Reply_Button_Clicked" BackgroundColor="#E85021" TextColor="White" FontSize="Body" Margin="10"/>
+    </VerticalStackLayout>
+</ContentPage>

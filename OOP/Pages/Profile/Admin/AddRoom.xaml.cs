@@ -18,14 +18,18 @@ public partial class AddRoom : ContentPage
             peapleString = peaplePicker.SelectedItem.ToString();
         else
             peapleString = null;
-        if (peapleString != null)
+        if (peapleString != null && Name.Text != null && Name.Text != "")
         {
             myHotel.AddRoom(Name.Text, Int32.Parse(peapleString));
             await Navigation.PopAsync();
         }
+        else if (Name.Text == null || Name.Text == "")
+        {
+            _ = DisplayAlert("Внимание", "Чтобы добавить комнату заполните поле \"Название\"", "OK");
+        }
         else
         {
-            // Обработка ситуации
+            _ = DisplayAlert("Внимание", "Чтобы добавить комнату заполните поле \"Количество человек\"", "OK");
         }
     }
 }

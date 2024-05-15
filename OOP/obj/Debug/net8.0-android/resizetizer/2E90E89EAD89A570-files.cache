@@ -1,11 +1,16 @@
 ﻿obj\Debug\net8.0-android\resizetizer\r\drawable\beach.jpg
+obj\Debug\net8.0-android\resizetizer\r\drawable\booking.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\exit.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\icon_qwerty.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\key.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\like.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\map.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\merto.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\nopalm.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\phone.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\profile.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\sms.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\star.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\telegram.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\viber.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\zalupa.png

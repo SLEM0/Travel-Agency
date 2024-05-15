@@ -6,9 +6,11 @@ public partial class EditRoom : ContentPage
 {
 	public Room MyRoom { get; set; }
     public List<int> Lst5 { get; set; } = Enumerable.Range(1, 5).ToList();
-    public EditRoom(Room room)
+    private readonly Hotel _hotel;
+    public EditRoom(Hotel hotel, Room room)
 	{
         MyRoom = room;
+        _hotel = hotel;
 		InitializeComponent();
 		BindingContext = this;
         peaplePicker.SelectedItem = room.CountPeaple;
@@ -20,19 +22,24 @@ public partial class EditRoom : ContentPage
             peapleString = peaplePicker.SelectedItem.ToString();
         else
             peapleString = null;
-        if (peapleString != null)
+        if (peapleString != null && Name.Text != null && Name.Text != "")
         {
             MyRoom.UpdateInfo(Name.Text, Int32.Parse(peapleString));
             await Navigation.PopAsync();
         }
+        else if (Name.Text == null || Name.Text == "")
+        {
+            _ = DisplayAlert("Внимание", "Заполните поле \"Название\"", "OK");
+        }
         else
         {
-            // Обработка ситуации
+            _ = DisplayAlert("Внимание", "Заполните поле \"Количество человек\"", "OK");
         }
     }
     private async void Remove_Button_Clicked(object sender, EventArgs e)
     {
-        MyRoom.PrepareToRemove();
+        _hotel.RemoveRoom(MyRoom);
+        //MyRoom.PrepareToRemove();
         await Navigation.PopAsync();
     }
 }

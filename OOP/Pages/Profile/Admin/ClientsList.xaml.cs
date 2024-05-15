@@ -7,10 +7,10 @@ public partial class ClientsList : ContentPage
 {
     public List<Client> Clients { get; set; }
 
-    public ClientsList()
+    public ClientsList(AgencyEntry agencyEntry)
 	{
 		InitializeComponent();
-        Clients = MainPage.MyEntry.Clients;
+        Clients = agencyEntry.Clients;
         BindingContext = this;
     }
 }

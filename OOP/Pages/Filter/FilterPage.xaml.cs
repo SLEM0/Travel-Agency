@@ -8,11 +8,13 @@ public partial class FilterPage : ContentPage
     public ObservableCollection<Hotel> Hotels { get; set; }
     public List<Tour>? hotelTours;
     readonly int countPeaple;
-    public FilterPage(List<Tour> _tours, int _countPeaple)
+    private readonly AgencyEntry _agencyEntry;
+    public FilterPage(AgencyEntry agencyEntry, List<Tour> _tours, int _countPeaple)
 	{
         countPeaple = _countPeaple;
 		tours = _tours;
         Hotels = new(Filter.GetHotelsByTours(_tours));
+        _agencyEntry = agencyEntry;
         InitializeComponent();
         BindingContext = this;
     }
@@ -21,7 +23,7 @@ public partial class FilterPage : ContentPage
         if (e.Item is Hotel selectedHotel)
         {
             hotelTours = Filter.GetToursByHotel(tours, selectedHotel);
-            await Navigation.PushAsync(new HotelInfo(selectedHotel, hotelTours, countPeaple));
+            await Navigation.PushAsync(new HotelInfo(_agencyEntry, selectedHotel, hotelTours, countPeaple));
         }
     }
 }

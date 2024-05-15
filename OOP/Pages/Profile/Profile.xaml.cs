@@ -1,27 +1,25 @@
+using OOP.Entities;
+
 namespace OOP;
 
 public partial class Profile : ContentPage
 {
-	public Profile()
+    private readonly AgencyEntry _agencyEntry;
+    private readonly Agency _agency;
+    private readonly IDbService _dbService;
+    public Profile(Agency agency, AgencyEntry agencyEntry, IDbService dbService)
 	{
 		InitializeComponent();
-        MainPage.MyEntry.LoginEvent += AdminEntry;
-        MainPage.MyEntry.ClientLoginEvent += ClientEntry;
+        _agencyEntry = agencyEntry;
+        _agency = agency;
+        _dbService = dbService;
     }
     private async void OpenEntry_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new EntryPage());
+        await Navigation.PushAsync(new EntryPage(_agency, _agencyEntry, _dbService));
     }
     private async void OpenRegistration_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Registration());
-    }
-    public async void AdminEntry()
-    {
-        await Navigation.PushAsync(new AdminProfile());
-    }
-    public async void ClientEntry()
-    {
-        await Navigation.PushAsync(new ClientProfile());
+        await Navigation.PushAsync(new Registration(_agencyEntry));
     }
 }

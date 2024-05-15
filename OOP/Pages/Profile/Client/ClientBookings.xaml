@@ -1,28 +1,54 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="OOP.ClientBookings"
-             Title="Мои заказы">
+             xmlns:converters="clr-namespace:OOP.Converters"
+             x:Class="OOP.ClientBookings">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:StatusToColorConverter x:Key="StatusToColor"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <VerticalStackLayout>
-        <ListView x:Name="listview" ItemsSource="{Binding Bookings}" RowHeight="240">
+        <ListView x:Name="listview" ItemsSource="{Binding Bookings}" RowHeight="285">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.View>
-                            <StackLayout>
-                                <Label Text="{Binding Tour.Hotel.Name}" FontSize="18" />
-                                <Label Text="{Binding Tour.Eat}" FontSize="16" />
-                                <Label Text="{Binding Tour.Room.Name}" FontSize="16" />
-                                <Label Text="{Binding Tour.AvailablePlaces}" FontSize="14" />
-                                <Label Text="{Binding Tour.Status}" FontSize="12" />
-                                <Button Text="Оплатить" Clicked="Pay_Button_Clicked" CommandParameter="{Binding}" BackgroundColor="#E85021" TextColor="White"/>
-                                <Button Text="Добавить отзыв"
-                                        Clicked="Review_Button_Clicked"
+                            <Border Stroke="Gray" Margin="5">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="20" />
+                                </Border.StrokeShape>
+                                <Grid>
+                                    <StackLayout Margin="5">
+                                        <Label Text="{Binding Tour.Hotel.Name}" FontSize="Large" />
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding Tour.Price}" FontSize="Large" TextColor="#E85021"/>
+                                            <Label Text="$" FontSize="Large" TextColor="#E85021"/>
+                                        </HorizontalStackLayout>
+                                        <Label Text="{Binding Tour.Room.Name}" FontSize="Body" />
+                                        <HorizontalStackLayout>
+                                            <Label Text="c " FontSize="Body"/>
+                                            <Label Text="{Binding Tour.BeginDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="Body" />
+                                            <Label Text=" по " FontSize="Body"/>
+                                            <Label Text="{Binding Tour.EndDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="Body" />
+                                        </HorizontalStackLayout>
+                                        <HorizontalStackLayout>
+                                            <Label Text="Количество мест: " />
+                                            <Label Text="{Binding CountPeaple}" />
+                                        </HorizontalStackLayout>
+                                        <Label x:Name="StatusLabel" Text="{Binding Status}" FontSize="Body" TextColor="{Binding Status, Converter={StaticResource StatusToColor}}"/>
+                                    </StackLayout>
+                                    <VerticalStackLayout VerticalOptions="End">
+                                        <Button Text="Добавить отзыв" Clicked="Review_Button_Clicked" CommandParameter="{Binding}" BackgroundColor="#E85021" TextColor="White" FontSize="Body" Margin="5"/>
+                                        <Button Text="Удалить"
+                                        Clicked="Remove_Button_Clicked"
                                         CommandParameter="{Binding}"
                                         BorderColor ="White"
                                         BackgroundColor="#1c1c1c"
-                                        TextColor="White"/>
-                            </StackLayout>
+                                        TextColor="White" FontSize="Body" Margin="5"/>
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Border>
                         </ViewCell.View>
                     </ViewCell>
                 </DataTemplate>

@@ -3,23 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OOP.ToursList"
              Title="Список туров">
-    <VerticalStackLayout>
-        <ListView x:Name="listview" ItemsSource="{Binding Tours}" ItemTapped="ListView_ItemTapped" RowHeight="120">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <ViewCell.View>
-                            <StackLayout>
-                                <Label Text="{Binding Hotel.Name}" FontSize="18" />
-                                <Label Text="{Binding Eat}" FontSize="16" />
-                                <Label Text="{Binding Room.Name}" FontSize="16" />
-                                <Label Text="{Binding AvailablePlaces}" FontSize="14" />
-                            </StackLayout>
-                        </ViewCell.View>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <Button Text="Добавить тур" Clicked="Add_Tour_Button_Clicked" BackgroundColor="#E85021" TextColor="White"/>
-    </VerticalStackLayout>
+    <ScrollView>
+        <Grid>
+            <VerticalStackLayout>
+                <ListView x:Name="listview" ItemsSource="{Binding Tours}" ItemTapped="ListView_ItemTapped" RowHeight="150">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Border Stroke="Gray" Margin="5">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="20" />
+                                        </Border.StrokeShape>
+                                        <VerticalStackLayout BackgroundColor ="#1c1c1c" Padding="5">
+                                            <Label Text="{Binding Hotel.Name}" FontSize="Large" />
+                                            <Label Text="{Binding Eat}" FontSize="Large" />
+                                            <Label Text="{Binding Room.Name}" FontSize="Body" />
+                                            <HorizontalStackLayout>
+                                                <Label Text="Осталось свободных мест: " FontSize="Body"/>
+                                                <Label Text="{Binding AvailablePlaces}" FontSize="Body" />
+                                            </HorizontalStackLayout>
+                                        </VerticalStackLayout>
+                                    </Border>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </VerticalStackLayout>
+        <Button Text="Добавить тур" Clicked="Add_Tour_Button_Clicked" BackgroundColor="#E85021" TextColor="White" VerticalOptions="End" FontSize="Large" Margin="25"/>
+        </Grid>
+    </ScrollView>
 </ContentPage>

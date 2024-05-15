@@ -6,15 +6,19 @@
     <NavigationPage.TitleView>
         <StackLayout BackgroundColor="#E85021" />
     </NavigationPage.TitleView>
-    <VerticalStackLayout>
-        <Label Text="Email" />
-        <Entry x:Name="Email" Placeholder="ivanov@gmail.com" Keyboard="Email"/>
-        <Label Text="Фамилия" />
-        <Entry x:Name="LastName" Placeholder="Иван"/>
-        <Label Text="Имя" />
-        <Entry x:Name="FirstName" Placeholder="Иванов"/>
-        <Label Text="Пароль" />
-        <Entry x:Name="Password" Placeholder="12345678"/>
-        <Button Text="Ок" Clicked="Ok_Button_Clicked" BackgroundColor="#E85021"/>
-    </VerticalStackLayout>
+    <Grid>
+        <VerticalStackLayout>
+        <Label Text="Email" FontSize="Large"/>
+        <Entry x:Name="Email" Keyboard="Email" FontSize="Large"/>
+        <Label Text="Фамилия" FontSize="Large"/>
+        <Entry x:Name="LastName" FontSize="Large"/>
+        <Label Text="Имя" FontSize="Large"/>
+        <Entry x:Name="FirstName" FontSize="Large"/>
+        <Label Text="Пароль" FontSize="Large"/>
+            <Entry x:Name="Password" FontSize="Large" IsPassword="True"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout VerticalOptions="End">
+            <Button Text="Ок" Clicked="Ok_Button_Clicked" BackgroundColor="#E85021" Margin="10" FontSize="Large"/>
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>
